@@ -122,14 +122,21 @@ table {
 @media screen and (min-width: 768px) and  (max-width: 1024px){
     
     h1 {
-        color: #000;
-        font-size: 22px; 
+        color: rgb(255, 60, 0);
+        font-size: 150%; 
         text-align: center; 
     }
 
+    h2{
+        font-size: 120%;
+    }
+
+    p,ul,ol{
+    font-size: 100%;
+    }
     table {
         width: 100%; 
-        font-size: 12px; 
+        font-size: 80%; 
     }
 
     /* ย่อขนาดรูปโปรไฟล์ลงมาเมื่ออยู่บนหน้าจอมือถือแนวตั้ง */
@@ -140,7 +147,7 @@ table {
 
     /* จัดการปุ่มเมนูให้เหมาะกับนิ้วสัมผัส (Touchscreen Friendly) */
     .nav a {
-        font-size: 10px;    /* ตัวอักษรเล็กกะทัดรัด */
+        font-size: 80%;    /* ตัวอักษรเล็กกะทัดรัด */
         padding: 8px 12px;  /* ขยายกล่องให้กว้างขึ้น นิ้วจิ้มง่าย ไม่พลาดไปโดนปุ่มข้างๆ */
     }
 
@@ -148,5 +155,9 @@ table {
     .nav a:hover, .nav a:active {
         transform: scale(1.1); 
         color: rgb(255, 60, 0) !important;
+    }
+    
+    footer {
+        font-size: 100%;
     }
 }
