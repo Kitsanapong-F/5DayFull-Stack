@@ -1,0 +1,37 @@
+/* จัดการกล่องข้อความหลัก (Container) */
+#container {
+  background-color: #f8f9fa;     /* สีพื้นหลังเทาอ่อน */
+  border: 1px solid #e0e0e0;     /* เส้นขอบบางๆ */
+  border-radius: 8px;            /* ทำมุมโค้งมน */
+  padding: 24px;                 /* เว้นระยะห่างด้านใน */
+  max-width: 400px;              /* จำกัดความกว้าง */
+  margin: 20px auto;             /* จัดให้อยู่กึ่งกลางหน้าจอ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* ใส่เงาละมุนๆ */
+  text-align: center;            /* จัดตัวอักษรให้อยู่กึ่งกลาง */
+}
+
+/* จัดการหัวข้อหลัก (Title) */
+.title {
+  color: #2d3748;                /* สีข้อความน้ำเงินเข้มเข้ม */
+  font-size: 24px;               /* ขนาดตัวอักษร */
+  margin-top: 0;                 /* ลบ margin ด้านบน */
+  margin-bottom: 16px;           /* เว้นระยะห่างจากปุ่มด้านล่าง */
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* จัดการปุ่มกด (Button) */
+#click-me {
+  background-color: #3182ce;     /* สีปุ่มน้ำเงินสุดเท่ */
+  color: white;                  /* สีตัวอักษรขาว */
+  border: none;                  /* ไม่เอาเส้นขอบ */
+  padding: 10px 20px;            /* เว้นระยะห่างในปุ่ม (บน-ล่าง, ซ้าย-ขวา) */
+  font-size: 16px;               /* ขนาดตัวอักษรปุ่ม */
+  border-radius: 6px;            /* ทำมุมปุ่มโค้งมน */
+  cursor: pointer;               /* เปลี่ยนเมาส์เป็นรูปมือเมื่อชี้ */
+  transition: background 0.2s ease; /* เอฟเฟกต์ตอนเปลี่ยนสี */
+}
+
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ที่ปุ่ม (Hover) */
+#click-me:hover {
+  background-color: #2b6cb0;     /* เปลี่ยนเป็นสีน้ำเงินเข้มขึ้น */
+}
