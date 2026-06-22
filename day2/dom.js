@@ -1,16 +1,11 @@
 // เลือกด้วย ID (ได้ 1 ตัว)
-let button = document.getElementById('click-me');
+const contentDiv = document.querySelector('.title');
 
-// เลือกด้วย Class (ตัวแรกที่เจอ)
-let title = document.querySelector('.title');
+// .textContent - ปลอดภัย, แสดงแค่ข้อความ
+contentDiv.textContent = 'ข้อความใหม่จาก textContent';
 
-// เลือกด้วย Tag
-let container = document.querySelector('div');
-
-// เลือกหลายตัวด้วย Class
-let allTitles = document.querySelectorAll('.title');
-
-console.log("ปุ่มที่เลือกมา:", button);
-console.log("หัวข้อที่เลือกมา:", title);
-console.log("กล่อง Container:", container);
-console.log("รายการคลาส title ทั้งหมด:", allTitles);
+// .innerHTML - สามารถใส่ HTML tags ได้
+// (⚠️ ระวัง XSS Attack ถ้าใช้กับข้อมูลจาก user)
+setTimeout(() => {
+    contentDiv.innerHTML = '<h2>หัวข้อใหม่</h2><p>จาก innerHTML</p>';
+}, 2000);
